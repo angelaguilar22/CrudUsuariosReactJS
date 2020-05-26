@@ -1,0 +1,50 @@
+  .trigger {
+    color: white !important;
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 32px;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  .trigger:hover {
+    color: #1890ff;
+  }
+  
+  .logo {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+  }
+  
+  .site-layout .site-layout-background {
+    background: #fff;
+  }
+  
+  .header-layout-background{
+    background: #001529;
+  }
+
+  .all{
+    height: 100%;
+  }
+
+  .profile-container{
+    background: #002140;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;  
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .profileAvatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }

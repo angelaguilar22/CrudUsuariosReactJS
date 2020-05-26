@@ -1,25 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+// import of navigation
+import { BrowserRouter as Router, Switch, Route, useParams } from "react-router-dom";
+
+// import of components 
+import MainMenu from './components/MainMenu';
+import UsersMain from './components/UsersMain';
+import UserDetails from './components/UserDetails';
+
+function DetalleUsuario() {
+  let { id } = useParams();
+
+  return (
+    <MainMenu>
+      <UserDetails usuario={id} />
+    </MainMenu>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+
+        <Route exact path="/usuarioDetalle/:id" children={<DetalleUsuario />} />
+
+        <Route exact path="/">
+          <MainMenu>
+            <UsersMain />
+          </MainMenu>
+        </Route>
+
+      </Switch>
+    </Router>
   );
 }
 

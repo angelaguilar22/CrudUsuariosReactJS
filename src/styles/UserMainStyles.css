@@ -1,0 +1,18 @@
+.float-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-right: 15px;
+    background-color: #001529;
+}
+
+.title-c{
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+.button-float-c{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}

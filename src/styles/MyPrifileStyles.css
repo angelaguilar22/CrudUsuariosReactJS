@@ -1,0 +1,80 @@
+.general-component{
+    /* font-family: 'Poppins', sans-serif; */
+    display: grid;
+    grid-template-columns: auto 68.5% ;
+}
+
+.general-component-font{
+    font-family: 'Poppins', sans-serif;
+}
+
+.general-component-font-list .ant-list-item-meta-description {
+    font-weight: normal;
+    font-family: Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.cuenta{
+    width: 420px;
+    height: 450px;
+}
+
+.div-cover-profile{
+    display: flex;
+    justify-content: center;
+}
+
+.cover-profile{
+    width: 70%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.div-cover-profile h3{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 0.3rem;    
+}
+
+.div-cover-profile span{
+    color: var(--facebook);
+    text-decoration: var(--facebook);
+}
+
+.proyectos-list{
+    margin-top: 15px!important;
+}
+
+.card-profile{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  -webkit-font-feature-settings: 'tnum';
+          font-feature-settings: 'tnum';
+  background: #fff;
+  border-radius: 2px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid #f0f0f0;
+
+}
+
+.grid-tareas-proyectos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.ver-todo{
+    position: absolute;
+    bottom: 15px;
+}
+
+.delay{
+    
+    transition-delay: 2s;
+}

@@ -1,0 +1,14 @@
+.clave:focus{
+    border-color: yellowgreen;
+    color: red;
+}
+
+#errorMessage{
+    transition:all 1s ease-in-out;
+}
+
+
+.columnas-c{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
